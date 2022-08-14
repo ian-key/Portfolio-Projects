@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <h1>Welcome to Rock, Paper, Scissors</h1>
+  <p> Click the button below to play a game of Rock, Paper, Scissors. If this is your first round, please ensure you open Developer Tools, as you'll see game progress in the console.</p>
+  <button type="button" id="button">Start playing!</button>
+
+
+  <script type="text/javascript">
+  window.onload = function() {
+    var b = document.getElementById('button'), f = 'code.js';
+    if(b.id == 'button') {
+        b.onclick = function() {
+            var s = document.createElement('script');
+            s.setAttribute('type', 'text/javascript');
+            s.setAttribute('src', f);
+            document.getElementsByTagName('head')[0].appendChild(s);
+        }
+    }
+};
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>10 Sec Maths Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="javascript.js"></script>
+  </head>
+  <body>
+    <div class="container p-3">
+      <div class="row">
+        <div class="col-12">
+          <h2>Welcome to 10 Second Maths</h2>
+          <p>How many questions can you answer before your time runs out? Every question you answer correctly adds a second to your time!</p>
+        </div>
+      </div>
+    </div>
+    <div class="container p-3">
+      <div class="row">
+        <div class="col-12">
+          <h4>Game Settings</h4>
+          <div>
+            <h5>Maximum Number:</h5>
+            <p>Select the maximum numbers to work with:<br>
+            <input id="number-range" class="m-0" type="number" min="10" max="100" step="5" value="10"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container p-3">
+      <h4>Lets Play!</h4>
+      <div class="row">
+        <div class="col-9">
+          <h1 id="equation"></h1>
+          <input id="user-input" class="d-block" type="number" placeholder="Your answer"/>
+        </div>
+        <div class="col-3 d-flex justify-content-center align-items-center">
+          <h3>Time Left: <span id="time-left">10</span></h3>
+        </div>
+      </div>
+    </div>
+    <div class="container p-3">
+      <div class="row">
+        <div class="col-12">
+          <h4>Round Scores</h4>
+          <h5>Current Score: <span id="score">0</span></h5>
+          <h5>High Score: <span id="highscore">0</span></h5>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

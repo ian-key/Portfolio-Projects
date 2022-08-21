@@ -1,0 +1,109 @@
+/* General Style */
+
+.container-fluid, .container {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+/* Hero Section */
+
+.aspectratiobox {
+  padding-top: calc(4.5 / 4 * 100%);
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-divider {
+width: 400px;
+border-top: 1px solid #f8f8f8;
+border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+
+.cover-image
+{
+  padding-top: calc(1 / 3 * 100%) !important;
+}
+
+@media (min-width: 767px)
+{
+  .aspectRatioBox {
+    padding-top: calc(2 / 3 * 100%);
+  }
+}
+@media (max-width: 992px) {
+
+  .cover-image
+  {
+    padding-top: calc(1 / 2 * 100%) !important;
+  }
+}
+@media (max-width: 767px)
+{
+  .cover-image
+  {
+    padding-top: calc(2.5 / 2 * 100%) !important;
+  }
+}
+
+.btn {
+  white-space: normal;
+  text-overflow: clip;
+}
+
+.inner {
+  /* overlay the inner <div> exactly on top of its parent */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+/* Portfolio Section */
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.accordion {
+  width: 80%;
+}
+
+.btn-outline-secondary {
+  min-width: 140px;
+}
+
+@media (max-width: 992px) {
+  .profile-block {
+    text-align: center;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  color:white;
+  background-color: black;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e") !important;
+  transform: rotate(-180deg);
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #000000;
+  box-shadow: 0 0 0 0.1rem rgb(0 0 0 / 25%);
+}
+
+/* Footer Section */
+.footer-link {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-nav:hover {
+  text-decoration: underline;
+  color: grey;
+}
